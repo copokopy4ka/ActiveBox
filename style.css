@@ -457,11 +457,12 @@ p {
 =====================*/
 
 .footer {
-    padding: 70px 0;
     background-color: #3a3e64;
 }
 
 .footer__inner {
+    padding: 70px 0;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -493,4 +494,29 @@ p {
     font-size: 14px;
     line-height: 1.6;
     color: rgba(255, 255, 255, .5);
+}
+
+/* copyright 
+=====================*/
+
+
+
+.copyright {
+    padding: 20px 0;
+
+    background-color: #313454;
+}
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #808080;
+}
+
+.copyright__text span.author {
+    color: #fff;
+}
+
+.copyright__heart {
+    color: red;
 }
