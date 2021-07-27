@@ -5,6 +5,8 @@ $(function() {
     let intro = $("#intro");
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
+    let nav = $("#nav");
+    let navToggle = $("#navToggle");
 
     checkScroll(scrollPos, introH);
 
@@ -24,17 +26,29 @@ $(function() {
     }
 
     // smooth scroll
+
     $("[data-scroll]").on("click", function(event) {
         event.preventDefault();
 
         let elementId = $(this).data('scroll');
         let elementOffset = $(elementId).offset().top;
 
-        console.log(elementOffset);
+        nav.removeClass("show");
 
         $("html, body").animate({
             scrollTop: elementOffset - 70
         }, 500)
     });
+
+
+    // nav toggle
+
+    navToggle.on("click", function(event) {
+        event.preventDefault();
+
+        nav.toggleClass("show");
+    });
+
+
 
 });
