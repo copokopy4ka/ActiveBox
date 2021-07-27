@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ActiveBox</title>
@@ -311,23 +312,47 @@
     </div> <!-- /.container -->
 </div><!-- /.team -->
 
+    <!-- reviews -->
 
-<div class="reviews" id="reviews"> <!-- reviews -->
-    <div class="container"><!-- container -->
+<div class="reviews" id="reviews">
+    <div class="container">  <!-- container -->
 
-        <div class="reviews__item">
-            <div class="reviews__photo">
-                <img class="reviews__img" src="img/reviews/review-1.jpg" alt="">
-            </div>
-            <div class="reviews__content">
-                <div class="reviews__text">
-                    “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+        <div id="reviewsSlider" class="reviews__slider">  <!-- reviewsSlider -->
+
+            <div class="slick-item">
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="img/reviews/review-1.jpg" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </div>
+                        <div class="reviews__author">
+                            Susan Sims, Interaction Designer at XYZ
+                        </div>
+                    </div>
                 </div>
-                <div class="reviews__author">
-                    Susan Sims, Interaction Designer at XYZ
+            </div>
+
+            <div class="slick-item">
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="img/reviews/review-1.jpg" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque rem ipsum expedita. Sunt reprehenderit laborum neque aliquam cum maxime eaque. Debitis dolores quas soluta incidunt quasi fugiat id reiciendis!
+                        </div>
+                        <div class="reviews__author">
+                            Susan Sims, Interaction Designer at XYZ
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </div>   <!-- /.reviewsSlider -->
+        
 
     </div> <!-- /.container -->
 </div> <!-- /.reviews -->
@@ -405,6 +430,7 @@
 
 
 <!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 
 
